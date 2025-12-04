@@ -13,8 +13,8 @@ $password = $_SESSION['password'];
 </head>
 <body class='bg-success-subtle'>
     <div class="container mt-5">
-    <h3>Ecco la tua password:</h3>
-    <h3><?php echo $password ?></h3>
+        <h2>La tua password è: <?php echo $password ?></h2>
+        <h5>La lunghezza è di <?php echo strlen($password) .' caratteri' ?></h5>
 </div>
 </body>
 </html>

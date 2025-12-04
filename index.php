@@ -39,10 +39,6 @@ if($password != "" ){
              automaticamente diventa: type="submit" -->
             <button class='btn btn-success mt-3'>Genera!</button>
         </form>
-
-
-        <h2>La tua password è: <?php echo $password ?></h2>
-        <h5>La lunghezza è di: <?php echo strlen($password) .' caratteri' ?></h5>
     </div>
 
 </body>
