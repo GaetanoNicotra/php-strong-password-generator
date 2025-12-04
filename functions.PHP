@@ -2,6 +2,7 @@
 
  $password = "";
  
+ // recupero il valore del ccampo input con $_GET
 if(isset($_GET['lunghezza'])){
     
     //variabili che contengono i caratteri per la password

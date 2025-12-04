@@ -1,6 +1,17 @@
-<!-- importo la funzione dal file function.php -->
 <?php
-include_once 'functions.php'
+// importo la funzione dal file function.php 
+include_once 'functions.php';
+
+// sposto l'utente in una pagina separata
+if($password != "" ){
+
+    //salvo la password 
+    session_start();
+
+    $_SESSION['password']= $password;
+
+    header("Location: ./password.php");
+};
 ?>
 
 <!DOCTYPE html>
@@ -31,6 +42,7 @@ include_once 'functions.php'
 
 
         <h2>La tua password è: <?php echo $password ?></h2>
+        <h5>La lunghezza è di: <?php echo strlen($password) .' caratteri' ?></h5>
     </div>
 
 </body>
